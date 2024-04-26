@@ -19,53 +19,6 @@ router.post("/user", async (req, res) => {
   }
 });
 
-
-// router.post("/register", async (req, res) => {
-//   try {
-//     const { contact_id, password } = req.body;
-//     console.log("contact_id", contact_id);
-//     // Validate request body
-//     if (!contact_id || !password) {
-//       return res
-//         .status(400)
-//         .json({ msg: "Please provide contact_id and password" });
-//     }
-
-//     // Check if the contact exists
-//     const existingContact = await Contact.findById(contact_id);
-//     console.log("existingContact", existingContact);
-//     if (!existingContact) {
-//       return res.status(400).json({ msg: "Contact not found" });
-//     }
-
-//     // Check if the user already exists
-//     const existingUser = await User.findOne({ contact_id });
-
-//     if (existingUser) {
-//       return res.status(400).json({ msg: "User already exists" });
-//     }
-
-//     // Hash the password
-//     const salt = await bcrypt.genSalt(10);
-//     const hashedPassword = await bcrypt.hash(password, salt);
-
-//     // Create a new user
-//     const newUser = new User({
-//       contact_id,
-//       password: hashedPassword,
-//     });
-
-//     await newUser.save();
-
-//     res
-//       .status(201)
-//       .json({ msg: "User registered successfully", user: newUser });
-//   } catch (error) {
-//     console.error(error.message);
-//     res.status(500).send("Server Error");
-//   }
-// });
-
 // Register a new user
 router.post("/register", async (req, res) => {
   try {
