@@ -1,0 +1,42 @@
+.input-container {
+  position: relative;
+}
+
+.search-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: auto;
+  z-index: 1;
+}
+
+.search-input {
+  padding-left: 40px; /* Adjust this value to make sure the text doesn't overlap with the icon */
+  border-radius: 10px;
+}
+.circle-icon {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  background-color: red; /* You can change the background color */
+  color: #ffffff; /* You can change the text color */
+  font-size: 24px;
+  text-align: center;
+  margin-right: 10px; /* Adjust spacing as needed */
+}
+.phone-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    background-color: red; /* You can change the background color */
+    color: #ffffff; /* You can change the text color */
+    font-size: 24px;
+    text-align: center;
+    margin-left: 10px; /* Adjust spacing as needed */
+}
